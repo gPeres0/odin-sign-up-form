@@ -1,0 +1,62 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/norse/Norsebold.otf);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+#left-side {
+    display: flex;
+    align-content: center;
+
+    flex: 1;
+    /* position: relative; */
+
+    height: 100vh;
+    background-image: url("./imgs/snake-bg.jpg");
+    background-color: black;
+    opacity: 1;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    flex: 1;
+    /* position: relative; */
+
+    width: max-content;
+    height: min-content;
+    background-color: grey;
+    opacity: 0.8;
+}
+
+h1 {
+    flex: 1;
+
+    color:white;
+    font-family: norse-bold, 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+}
+
+#loki-rune {
+    flex: 1;
+    height: 30vh;
+}
+
+#right-side {
+    flex: 1;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
