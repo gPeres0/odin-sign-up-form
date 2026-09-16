@@ -3,18 +3,29 @@
     src: url(./fonts/norse/Norsebold.otf);
 }
 
+@font-face {
+    font-family: norse;
+    src: url(./fonts/norse/Norse.otf);
+}
+
+/* ------------------------------------------ */
+
 body {
     display: flex;
     flex-direction: row;
     margin: 0;
 }
 
+/* ------------------------------------------ */
+
 #left-side {
     display: flex;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
-    flex: 1;
-    /* position: relative; */
+    width: 40vw;
+    flex: 0 0 40vw;
 
     height: 100vh;
     background-image: url("./imgs/snake-bg.jpg");
@@ -30,33 +41,70 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 
-    flex: 1;
-    /* position: relative; */
-
-    width: max-content;
+    width: 100%;
     height: min-content;
-    background-color: grey;
+    margin-top: 25vh;
+
+    background-color: #232f23; 
     opacity: 0.8;
 }
 
 h1 {
-    flex: 1;
+    flex: 0 0 auto;
+    margin: 0;
+    margin-right: -34px;
 
     color:white;
     font-family: norse-bold, 'Times New Roman', Times, serif;
-    font-size: 3.5rem;
+    font-size: 6.5rem;
+    letter-spacing: 0.1em;
 }
 
 #loki-rune {
-    flex: 1;
-    height: 30vh;
+    flex: 0 0 auto;
+    display: block;
+    height: 6.5rem;
+    width: auto;
 }
+
+.under-text {
+    color: white;
+    opacity: 0.65;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    
+    width: 25em;
+}
+
+#signature {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* ------------------------------------------ */
 
 #right-side {
     flex: 1;
+    align-content: center;
+    margin: 5rem
 }
 
-p {
-    font-family: 'Times New Roman', Times, serif;
+.form-upper-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: norse;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 60px -16px teal;
 }
